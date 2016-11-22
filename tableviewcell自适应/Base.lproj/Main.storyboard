@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="a0N-ux-Dee">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--tableview不同cell自适应-->
+        <scene sceneID="FfX-62-eyd">
+            <objects>
+                <viewController id="SBs-N5-Pag" customClass="RootViewController" customModule="tableviewcell自适应" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cYq-iI-nPW"/>
+                        <viewControllerLayoutGuide type="bottom" id="fcp-0f-Wp0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qmv-pw-fSD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="g7s-T7-QQ0">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="displaycells" id="uD5-4H-UQT">
+                                        <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uD5-4H-UQT" id="2Pv-SD-Nzc">
+                                            <frame key="frameInset" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="g7s-T7-QQ0" firstAttribute="top" secondItem="qmv-pw-fSD" secondAttribute="top" id="G2C-nl-UqB"/>
+                            <constraint firstItem="g7s-T7-QQ0" firstAttribute="leading" secondItem="qmv-pw-fSD" secondAttribute="leading" id="JTD-Q4-E8c"/>
+                            <constraint firstAttribute="trailing" secondItem="g7s-T7-QQ0" secondAttribute="trailing" id="ekJ-op-GVc"/>
+                            <constraint firstItem="fcp-0f-Wp0" firstAttribute="top" secondItem="g7s-T7-QQ0" secondAttribute="bottom" id="etv-1J-lJZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="tableview不同cell自适应" id="2Mj-2a-Le7"/>
+                    <connections>
+                        <outlet property="tableview" destination="g7s-T7-QQ0" id="kqR-Sw-tk1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qgT-Ql-o4h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="175.19999999999999" y="243.32833583208398"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Jvw-8o-z78">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="a0N-ux-Dee" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="b2X-yv-UZ7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="SBs-N5-Pag" kind="relationship" relationship="rootViewController" id="nFO-sU-ROb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j85-4F-XNg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-764" y="243.32833583208398"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="mKJ-10-a8A">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--iOS8 View Controller-->
+        <scene sceneID="jJX-f8-gmd">
+            <objects>
+                <viewController id="mKJ-10-a8A" customClass="iOS8ViewController" customModule="tableviewcell自适应" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aQt-aQ-6nQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="IJp-Ia-VgE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Crr-9A-wxr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wNf-cQ-0BU">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="iOS8Cell" id="d92-eJ-9pN">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="d92-eJ-9pN" id="bSG-bU-Oc2">
+                                            <frame key="frameInset" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IJp-Ia-VgE" firstAttribute="top" secondItem="wNf-cQ-0BU" secondAttribute="bottom" id="97R-4n-EI1"/>
+                            <constraint firstAttribute="trailing" secondItem="wNf-cQ-0BU" secondAttribute="trailing" id="Mnt-Sx-Ho7"/>
+                            <constraint firstItem="wNf-cQ-0BU" firstAttribute="top" secondItem="Crr-9A-wxr" secondAttribute="top" id="r8Q-bf-JLk"/>
+                            <constraint firstItem="wNf-cQ-0BU" firstAttribute="leading" secondItem="Crr-9A-wxr" secondAttribute="leading" id="wKb-3S-9E9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableview" destination="wNf-cQ-0BU" id="g9e-Aj-7dO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KsP-WZ-aOk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="120.8" y="-168.6656671664168"/>
+        </scene>
+    </scenes>
+</document>
